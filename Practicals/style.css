@@ -1,0 +1,22 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 160%;
+}
+p {
+  border: 2px solid powderblue;
+  padding: 50px;
+}
+
+p {
+  border: 2px solid powderblue;
+  margin: 10px;
+}

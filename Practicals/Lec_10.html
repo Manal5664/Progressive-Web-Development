@@ -1,0 +1,283 @@
+<!-- Inner html -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>My Web Page</h1>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
+</script>
+</body>
+</html> -->
+
+
+<!-- inner text -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerText = "Hello World";
+</script>
+
+</body>
+</html> -->
+
+<!-- document.write -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My First Web Page</h1>
+    <p>My first paragraph.</p>
+
+<script>
+document.write(5 + 6);
+</script>
+
+</body>
+</html> -->
+
+<!-- Windo Alert -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);
+</script>
+
+</body>
+</html> -->
+
+
+<!-- only alert -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Test Alert</title>
+</head>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+    window.onload = function() {
+        alert(5 + 6);
+    };
+</script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log(5 + 6);
+    </script>
+
+</body>
+</html> -->
+
+<!-- if statement -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks = 95;
+        if(marks >= 90){
+            console.log("Grade A");
+            }
+        else if(marks >= 75){
+            console.log("Grade B");
+        } else {
+            console.log("Grade C");
+}
+    </script>
+</body>
+</html> -->
+
+<!-- number checker -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a number:"));
+
+        if(num > 0){
+            alert("Number is Positive");
+        } else if(num < 0){
+            alert("Number is Negative");
+        } else {
+            alert("Number is Zero");
+        }
+    </script>
+    
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a number:"));
+
+    if(num % 2 === 0){
+        alert("The number is Even");
+    } else {
+        alert("The number is Odd");
+    }
+    </script>
+</body>
+</html>
+ -->
+
+ <!-- age group classification -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = 25; // Hard-coded value
+        if(age < 13){
+            console.log("You are a Child");
+        } else if(age >= 13 && age < 20){
+            console.log("You are a Teenager");
+        } else if(age >= 20 && age < 60){
+            console.log("You are an Adult");
+        } else {
+            console.log("You are a Senior Citizen");
+        }
+    </script>
+</body>
+</html> -->
+
+<!--  switch statemenet -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = 3; // Hard-coded value
+
+        switch(day){
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+            case 3:
+                console.log("Wednesday");
+                break;
+            case 4:
+                console.log("Thursday");
+                break;
+            case 5:
+                console.log("Friday");
+                break;
+            case 6:
+                console.log("Saturday");
+                break;
+            case 7:
+                console.log("Sunday");
+                break;
+            default:
+                console.log("Invalid day");
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- calculator using switch -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let num1 = 10;
+    let num2 = 5;
+    let operator = "*"; // Hard-coded operator
+
+    switch(operator){
+        case "+":
+            console.log(num1 + num2);
+            break;
+        case "-":
+            console.log(num1 - num2);
+            break;
+        case "*":
+            console.log(num1 * num2);
+            break;
+        case "/":
+            console.log(num1 / num2);
+            break;
+        default:
+            console.log("Invalid operator");
+    }
+    </script>
+</body>
+</html>
+  

@@ -1,0 +1,231 @@
+<!-- <form action="/login" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <br>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+  <br><br>
+  <input type="submit" value="Login">
+</form> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    
+
+<section class="contact-form">
+  <h2>Contact Us</h2>
+  <form action="/submit_contact" method="POST">
+    
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject">
+    <br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <br>
+    <input type="hidden" name="formID" value="contact123">
+    <br>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Survey Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .survey-form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .survey-form h1 {
+    text-align: center;
+    color: teal;
+    margin-bottom: 20px;
+  }
+
+  .survey-form section {
+    margin-bottom: 20px;
+  }
+
+  .survey-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .survey-form input[type="text"],
+  .survey-form input[type="email"],
+  .survey-form input[type="number"],
+  .survey-form select,
+  .survey-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .survey-form textarea {
+    resize: vertical;
+  }
+
+  .survey-form input[type="radio"],
+  .survey-form input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  .survey-form .options {
+    margin-bottom: 12px;
+  }
+
+  .survey-form button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .survey-form button:hover {
+    background-color: #006666;
+  }
+
+</style>
+</head>
+<body>
+
+<form class="survey-form" action="/submit_survey" method="POST">
+
+  <h1>Customer Feedback Survey</h1>
+  
+  <!-- Hidden Field -->
+  <input type="hidden" name="surveyID" value="survey2026">
+
+  <!-- Section 1: Personal Info -->
+  <section>
+    <h2>Personal Information</h2>
+    
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50" placeholder="Your full name">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="you@example.com">
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="120" required>
+    
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="other">Other</option>
+    </select>
+  </section>
+
+  <!-- Section 2: Preferences -->
+  <section>
+    <h2>Preferences</h2>
+    
+    <label>Favorite Product Type:</label>
+    <div class="options">
+      <input type="radio" name="product" value="electronics" required> Electronics
+      <input type="radio" name="product" value="clothing"> Clothing
+      <input type="radio" name="product" value="books"> Books
+      <input type="radio" name="product" value="other"> Other
+    </div>
+
+    <label>Services Used:</label>
+    <div class="options">
+      <input type="checkbox" name="services" value="online"> Online Shopping
+      <input type="checkbox" name="services" value="instore"> In-store
+      <input type="checkbox" name="services" value="support"> Customer Support
+      <input type="checkbox" name="services" value="delivery"> Delivery
+    </div>
+
+    <label for="frequency">How often do you use our products/services?</label>
+    <select id="frequency" name="frequency" required>
+      <option value="">Select one</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+      <option value="rarely">Rarely</option>
+    </select>
+  </section>
+
+  <!-- Section 3: Feedback -->
+  <section>
+    <h2>Feedback</h2>
+    
+    <label for="satisfaction">Rate your satisfaction (1-5):</label>
+    <input type="number" id="satisfaction" name="satisfaction" min="1" max="5" required>
+    
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="5" placeholder="Write your thoughts here..."></textarea>
+  </section>
+
+  <button type="submit">Submit Survey</button>
+
+</form>
+
+</body>
+</html>

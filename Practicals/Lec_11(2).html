@@ -1,0 +1,47 @@
+<!-- calculator with conditions and loop -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let continueCalc = true;
+
+        while(continueCalc){
+
+            let num1 = parseFloat(prompt("Enter first number:"));
+            let operator = prompt("Enter operator (+, -, *, /):");
+            let num2 = parseFloat(prompt("Enter second number:"));
+
+            let result;
+
+            if(operator === "+"){
+                result = num1 + num2;
+            }
+            else if(operator === "-"){
+                result = num1 - num2;
+            }
+            else if(operator === "*"){
+                result = num1 * num2;
+            }
+            else if(operator === "/"){
+                if(num2 !== 0){
+                    result = num1 / num2;
+                } else {
+                    result = "Cannot divide by zero!";
+                }
+            }
+            else{
+                result = "Invalid operator!";
+            }
+
+            alert("Result: " + result);
+
+            continueCalc = confirm("Do you want to calculate again?");
+        }
+    </script>
+</body>
+</html>

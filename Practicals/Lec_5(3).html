@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alien Space Cafe</title>
+<style>
+/* -------------------------------
+   General Body
+---------------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* -------------------------------
+   Container
+---------------------------------*/
+.container {
+  width: 950px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* -------------------------------
+   Header
+---------------------------------*/
+header {
+  text-align: center;
+  padding: 20px;
+  background: #004080;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+header nav a {
+  color: #ffd700;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* -------------------------------
+   Main + Sidebar (Float Layout)
+---------------------------------*/
+.main {
+  overflow: hidden; /* clearfix */
+  margin-top: 20px;
+}
+
+/* Article */
+.article {
+  float: left;
+  width: 65%;
+  margin-right: 5%;
+}
+
+/* Sidebar */
+.sidebar {
+  float: left;
+  width: 30%;
+  background: #f0f0f0;
+  padding: 15px;
+  border-left: 2px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* -------------------------------
+   Typography & Text Formatting
+---------------------------------*/
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.mark { background: #fffa8b; color: #000; padding: 2px; }
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+  color: #666;
+  margin: 10px 0;
+}
+pre {
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+}
+
+/* -------------------------------
+   Lists
+---------------------------------*/
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+/* -------------------------------
+   Float Boxes / Z-index
+---------------------------------*/
+.float-robot1 {
+  float: left;
+  width: 120px;
+  height: 100px;
+  background: #cce6ff;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.float-robot2 {
+  float: left;
+  width: 120px;
+  height: 100px;
+  background: #ffcc99;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+/* -------------------------------
+   Box Model
+---------------------------------*/
+.menu-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #004080;
+  outline: 1px dashed #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+/* -------------------------------
+   Positioning
+---------------------------------*/
+.relative { position: relative; top: 10px; left: 10px; background: #ffd699; padding: 5px; }
+.absolute { position: absolute; top: 200px; left: 400px; background: #99ffcc; padding: 5px; }
+.fixed { position: fixed; bottom: 10px; right: 10px; background: #ff9999; padding: 5px; color: #000; }
+.sticky { position: sticky; top: 0; background: #99ccff; padding: 5px; text-align: center; color: #000; }
+
+/* -------------------------------
+   Footer
+---------------------------------*/
+footer {
+  clear: both;
+  text-align: center;
+  padding: 15px;
+  background: #004080;
+  color: #ffd700;
+  margin-top: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* -------------------------------
+   Hyperlinks / Pseudo-classes
+---------------------------------*/
+a { color: #004080; text-decoration: none; }
+a:hover { text-decoration: underline; color: #ff6600; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <h1>Alien Space Cafe</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#robots">Robots</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content + Sidebar -->
+  <div class="main">
+
+    <!-- Article -->
+    <div class="article">
+      <h2 id="menu">Today's Menu</h2>
+      <p>Welcome to the <span class="bold">Alien Space Cafe</span>! Enjoy our <span class="italic">cosmic treats</span>:</p>
+
+      <div class="menu-item">🛸 <span class="underline">Martian Milkshake</span> - glowing green delight</div>
+      <div class="menu-item">👽 <span class="mark">Alien Burger</span> - layered with meteor sauce</div>
+      <div class="menu-item">🌌 Cosmic Pizza - extra asteroid topping</div>
+
+      <h3>Floating Robot Assistants 🤖</h3>
+      <div class="float-robot1">R1</div>
+      <div class="float-robot2">R2</div>
+      <div style="clear: both;"></div>
+
+      <h3>Special Notes</h3>
+      <blockquote>"All drinks are served with zero-gravity straws!"</blockquote>
+      <pre>
+Recipe Example:
+1. Mix cosmic dust
+2. Add moon milk
+3. Stir 3 times clockwise
+      </pre>
+
+      <p>Check out our <a href="#contact">contact page</a> or <a href="mailto:aliencafe@space.com">email us</a> for reservations!</p>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="robots">
+      <h3>About the Cafe</h3>
+      <p>Located in orbit, our cafe serves delicious treats across the galaxy with the help of friendly floating robots.</p>
+
+      <h3>Robot Info</h3>
+      <ul>
+        <li>R1 - Drinks</li>
+        <li>R2 - Snacks</li>
+        <li>R3 - Desserts</li>
+      </ul>
+
+      <h3>Location</h3>
+      <p>Orbiting Planet Z-42 🪐</p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    &copy; 2026 Alien Space Cafe | Contact: <a href="mailto:aliencafe@space.com">aliencafe@space.com</a>
+  </footer>
+
+</div>
+
+<div class="fixed">Open 24/7 | Floating Cafe</div>
+
+</body>
+</html>

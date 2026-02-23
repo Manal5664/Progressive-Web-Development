@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades Dashboard</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .A { background-color: #6ac56d; } /* green */
+        .B { background-color: #cec576; } /* yellow */
+        .C { background-color: #ffe0b2; } /* orange */
+        .Fail { background-color: #db7353; } /* red */
+        button { padding: 10px 20px; cursor: pointer; border-radius: 5px; 
+            background-color: #007BFF; color: white; border: none; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+<h2>Student Grades Dashboard</h2>
+<button onclick="loadStudents()">Load Students</button>
+<div id="studentTable"></div>
+
+<script src="Lec_15.js">
+</script>
+
+</body>
+</html>

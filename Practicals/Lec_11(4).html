@@ -1,0 +1,30 @@
+<!-- Table Generator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="generateTable()">Generate Table</button>
+    <div id="output"></div>
+    <script>
+        function generateTable() {
+            let table = "<table border='1'><tr><th>Name</th><th>Age</th></tr>";
+            let data = [
+                { name: "Alice", age: 30 },
+                { name: "Bob", age: 25 },
+                { name: "Charlie", age: 35 }
+            ];
+
+            for (let i = 0; i < data.length; i++) {
+                table += "<tr><td>" + data[i].name + "</td><td>" + data[i].age + "</td></tr>";
+            }
+
+            table += "</table>";
+            document.getElementById("output").innerHTML = table;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!-- objects in JavaScript -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: "Ali",
+            age: 22,
+            greet: function() {
+                console.log("Hello");
+    }
+};
+console.log(person.name); // Output: Ali
+person.greet();
+    </script>
+</body>
+</html> -->
+
+<!-- using an object literals -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: "Ali",
+            age: 22,
+            greet: function() {
+                console.log("Hello");
+            }
+        };
+        console.log(person.name); // Output: Ali
+        person.greet();
+
+        // using the new keyword
+
+        let persons = new Object();
+            persons.name = "Sara";
+            persons.age = 25;
+            console.log(persons.name); // Output: Sara
+        
+        // Using an Object Constructor Function
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        let p1 = new Person("Alice", 22);
+        let p2 = new Person("Raza", 25);
+
+        console.log(p1.name); // Output: Alice
+        console.log(p2.name); // Output: Raza
+
+        // Using Object.assign()
+
+        let obj1 = { a: 1 };
+        let obj2 = { b: 2 };
+
+        let merged = Object.assign({}, obj1, obj2);
+        console.log(merged); // Output: { a: 1, b: 2 }
+
+        // using object.create()    
+        let persona = {
+            greet: function() {
+                console.log("Hello");
+            }
+        };
+
+        let student = Object.create(persona);
+        student.name = "Ahmed";
+        student.greet(); // Output: Hello
+
+        // Using Object.fromEntries()
+
+        let entries = [
+            ["name", "Ali"],
+            ["age", 22]
+            
+        ];
+        let obj = Object.fromEntries(entries);
+        console.log(obj); // Output: { name: "Ali", age: 22 }
+        
+    </script>
+</body>
+</html>

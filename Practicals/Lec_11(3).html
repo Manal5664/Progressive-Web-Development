@@ -1,0 +1,29 @@
+<!-- Practical – List Manipulator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="item">
+    <button onclick="addItem()">Add</button>
+    <ul id="list"></ul>
+    <script>
+        let items = [];
+
+        function addItem() {
+            let value = document.getElementById("item").value;
+            items.push(value);
+
+            let list = document.getElementById("list");
+            list.innerHTML = "";
+
+            for (let i = 0; i < items.length; i++) {
+                list.innerHTML += "<li>" + items[i] + "</li>";
+            }
+        }
+    </script>
+</body>
+</html>

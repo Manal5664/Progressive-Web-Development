@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tailwind UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100">
+
+<nav class="bg-slate-900 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+    <h1 class="text-xl font-semibold tracking-wide">MySite</h1>
+    <ul class="flex gap-4 text-sm">
+      <li><a class="hover:text-sky-300 transition" href="#">Home</a></li>
+      <li><a class="hover:text-sky-300 transition" href="#">Blog</a></li>
+      <li><a class="hover:text-sky-300 transition" href="#">About</a></li>
+      <li><a class="hover:text-sky-300 transition" href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="max-w-6xl mx-auto px-4 mt-8">
+  <section class="rounded-2xl bg-gradient-to-r from-sky-600 to-cyan-500 p-6 md:p-8 text-white shadow-lg mb-8">
+    <h2 class="text-2xl md:text-3xl font-bold mb-2">Welcome to My Learning Blog</h2>
+    <p class="text-sm md:text-base text-sky-100 mb-4">Tailwind CSS ki utility classes use karke fast, responsive aur clean UI build karne ka practical example.</p>
+    <button class="bg-white text-sky-700 font-medium px-5 py-2 rounded-lg hover:bg-sky-50 transition">
+      Explore Articles
+    </button>
+  </section>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="md:col-span-2 space-y-6">
+      <article class="bg-white p-6 shadow rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Blog Post: Tailwind Basics</h3>
+        <p class="text-gray-600">Is post me spacing, typography aur responsive breakpoints ka beginner-friendly breakdown diya gaya hai.</p>
+        <button class="mt-4 bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition">Read More</button>
+      </article>
+
+      <article class="bg-white p-6 shadow rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Blog Post: Reusable Layouts</h3>
+        <p class="text-gray-600">Cards, hero sections aur sidebar layout ko reusable pattern me kaise convert karna hai, yeh yahan cover kiya gaya hai.</p>
+        <button class="mt-4 border border-sky-600 text-sky-700 px-4 py-2 rounded-lg hover:bg-sky-50 transition">Read More</button>
+      </article>
+
+      <section class="bg-white p-6 shadow rounded-xl">
+        <h3 class="text-lg font-semibold mb-4">Quick Contact</h3>
+        <form class="grid sm:grid-cols-2 gap-4">
+          <input class="border rounded-lg px-3 py-2" type="text" placeholder="Your name">
+          <input class="border rounded-lg px-3 py-2" type="email" placeholder="Your email">
+          <textarea class="border rounded-lg px-3 py-2 sm:col-span-2" rows="3" placeholder="Your message"></textarea>
+          <button class="sm:col-span-2 bg-emerald-600 text-white py-2 rounded-lg hover:bg-emerald-700 transition" type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <aside class="space-y-6">
+      <div class="bg-sky-100 p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-2">Sidebar Content</h4>
+        <p class="text-sm text-sky-900">Yahan profile info, quick links ya latest update cards add kar sakte hain.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-3">Categories</h4>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="border-b pb-2">HTML</li>
+          <li class="border-b pb-2">CSS</li>
+          <li class="border-b pb-2">Tailwind CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <h4 class="font-semibold mb-3">Newsletter</h4>
+        <p class="text-sm text-gray-600 mb-3">Weekly updates ke liye subscribe karein.</p>
+        <div class="space-y-2">
+          <input class="w-full border rounded-lg px-3 py-2" type="email" placeholder="Email address">
+          <button class="w-full bg-slate-900 text-white py-2 rounded-lg hover:bg-slate-800 transition">Join</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="mt-10 bg-slate-900 text-slate-200">
+  <div class="max-w-6xl mx-auto px-4 py-4 text-sm flex flex-col sm:flex-row sm:justify-between gap-2">
+    <span>&copy; 2026 MySite</span>
+    <span>Built with Tailwind CSS</span>
+  </div>
+</footer>
+
+</body>
+</html>

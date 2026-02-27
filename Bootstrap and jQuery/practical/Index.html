@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-capitalize" aria-current="page" href="#">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active text-capitalize" aria-current="page" href="#">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active text-capitalize" aria-current="page" href="#">Services</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero Section starts here -->
+ <section class="bg-main bg-color hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1> we collect High quality leads  </h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis commodi, quia illum doloribus ipsam voluptatibus distinctio vero consectetur eum voluptates non? Voluptatibus voluptate inventore quidem quaerat, hic necessitatibus repudiandae!</P>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary text-capitalize" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Contact Us </button>
+                </div>
+            </div>
+            <!-- hero section imgae -->
+        </div>
+    </div>
+
+ </section>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>  
+</body>
+</html>

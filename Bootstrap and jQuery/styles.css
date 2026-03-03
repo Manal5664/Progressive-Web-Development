@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --brand-dark: #0d4b45;
+  --brand-cream: #ebe6c9;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--brand-cream);
+}
+
+.top-strip {
+  background-color: var(--brand-dark);
+  color: #fff;
+}
+
+.header-nav {
+  position: relative;
+  background-color: var(--brand-cream);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.phone-btn {
+  background-color: var(--brand-dark);
+  color: #fff;
+  border: 0;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+/* .phone-btn:focus {
+  background-color: #0a3c37;
+  color: #fff;
+} */
+
+.cart-btn {
+  background: transparent;
+  border: 0;
+  color: var(--brand-dark);
+  font-size: 1.4rem;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  bottom: -48px;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.logo-img {
+  height: clamp(90px, 12vw, 120px);
+  width: auto;
+  object-fit: contain;
+}
+
+.header-banner-img {
+  width: 100%;
+  height: clamp(240px, 48vw, 440px);      /*clamp(minimum height, preferred responsive value, maximum height) */
+  object-fit: cover;
+  display: block;
+}
+
